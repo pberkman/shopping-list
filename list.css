@@ -1,0 +1,10 @@
+*{
+	outline:2px solid red;
+}
+
+
+span .remove .edit {
+	position:relative;
+	display:list-item;
+
+}

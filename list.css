@@ -1,10 +1,94 @@
-*{
-	outline:2px solid red;
+html {
+	height:100%;
 }
 
-
-span .remove .edit {
+body{
+	margin:0px auto;
+	text-align:center;
+	height:100%;
+	min-width:1300px;
+	outline:2px solid red;
+	background-image:url("https://farm4.staticflickr.com/3434/3788072104_9b6d00e1e1_b.jpg");
+	background-color:#000033;
+	background-repeat:no-repeat;
+	background-size:100%;
+	background-position:center;
+	display:fixed;
+	
+	
+}
+#container {
 	position:relative;
-	display:list-item;
+	margin:0 auto;
+	text-align:center;
+	width:600px;
+	height:400px;
+	background: linear-gradient(to bottom, white, rgba(192,192,192,0.8));
+	top:100px;
+}
+header {
+	font-size:40px;
+}
 
+/*area for list items*/
+.main{
+	border-radius:5px;
+	margin:20px auto;
+	text-align:center;
+}
+
+/*area for item input area*/
+.inputSection{ 
+	width:500px;
+	position:relative;
+	display:inline-block;
+	border: 1px solid black;
+	border-radius:5px;
+	padding:3px;
+}
+.newItem { 
+	width:429px;
+	height:29px;
+	margin:0;
+	padding:0;
+	float:left;
+	border:none;
+}
+#Add { 
+	width:70px;
+	height:29px;
+	float:right;
+	margin:0;
+	padding:0;
+	border:none;
+}
+
+table { /*area for added list items */
+	width:500px;
+	margin:0 auto;
+	text-align:center;
+}
+.indItem { 
+	text-align:left;
+	font-size:20px;
+	font-family:georgia;
+}
+
+.remove {
+	background:url("images/remove.png");
+	width:25px;
+	height:25px;
+	text-align:center;
+	background-repeat:no-repeat; background-size:25px 25px;
+}
+.edit {
+	background-image:url("images/edit.png");
+	width:25px;
+	height:25px;
+	background-repeat:no-repeat; background-size:25px 25px;
+}
+
+/*classes for jquery*/
+.crossedOff {
+	text-decoration: line-through;
 }

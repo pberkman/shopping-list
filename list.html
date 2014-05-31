@@ -6,33 +6,35 @@
 	<link type="text" rel="stylesheet" href="list.css">
 </head>
 <body>
+  <div id="container">
 	<header>Shopping List</header>
 	<p>Pick a Date:<input type="text" id="datePicker"></p>
-	<section class = "main">
-		<section class = "inputSection">
-			<input type="text" value ="Type new item here"/>
-			<button id = "Add"></button>
+	<section class="main">
+		<section class="inputSection">
+			<input type="text" value ="Type new item here" class="newItem"/>
+			<button id="Add">Add Item</button>
 		</section>
-		<section class = "listSection">
-			<ul>
-			  <li class="listItem"><span>Oranges</span><div class="remove">Remove</div> <div class-"edit">Edit</div></li>
-			  <li class="listItem">
-			    <span>eggs</span>
-			    <div class="remove">Remove</div>
-			    <div class-"edit">Edit</div>
-			  </li>
-			  <li class="listItem">
-			  	<span>coffee</span>
-			  	<div class="remove"></div>
-			  	<div class="edit"></div>
-			  </li>
-			  <li class="listItem">
-			  	<span>Cereal</span>
-			  	<div class="remove"></div>
-			  	<div class="edit"></div>
-			  </li>
-			</ul>
+		<section class="listSection">
+			<table>
+				<tr class="item">
+					<td class="indItem crossedOff">Oranges</td>
+					<td class="remove"></td>
+					<td class="edit"></td>
+				</tr>
+				<tr class="item">
+					<td class="indItem">Apples</td>
+					<td class="remove"></td>
+					<td class="edit"></td>
+				</tr>
+				<tr class="item">
+					<td class="indItem">Coffee</td>
+					<td class="remove"></td>
+					<td class="edit"></td>
+			</table>
 		</section>
 	</section>
+	<p>Click on the item to check it off</p>
+	<P>Click on item and drag to re-order the list</p>
+  </div>
 </body>
 </html>

@@ -1,22 +1,23 @@
 html {
 	position:relative;
 	height:100%;
-
 }
 
+*{
+	
+}
 body{
 	margin:30px auto;
 	position:fixed;
-	min-height:600px;
-	min-width:1400px;
+	min-height:400px;
+	min-width:500px;
 	width:100%;
 	height:100%;
 	font-family:georgia, sans-serif;
-	background-color:#000033;
+	background-color:rgba(236,203,35,0.6);
 }
 #background {
 	position:relative;
-	height:90%;
 	background-image:url("https://farm4.staticflickr.com/3434/3788072104_9b6d00e1e1_b.jpg");
 	background-repeat:no-repeat;
 	background-size:1517px;
@@ -38,6 +39,8 @@ body{
 }
 header {
 	font-size:40px;
+	color:rgba(0,0,102,0.9);
+	font-family: Impact,sans-serif;
 }
 
 /*area for list items*/
@@ -49,15 +52,15 @@ header {
 
 /*area for item input area*/
 .inputSection{ 
-	width:500px;
+	width:400px;
 	position:relative;
 	display:inline-block;
-	border: 1px solid black;
+	border: 1px solid grey;
 	border-radius:5px;
-	padding:3px;
+	padding:1px;
 }
-.newItem { 
-	width:429px;
+#newItem { 
+	width:329px;
 	height:29px;
 	margin:0;
 	padding:0;
@@ -76,31 +79,46 @@ header {
 .listSection {
 	overflow:auto;
 }
-table { 
-	width:500px;
+ul { 
+	width:400px;
 	margin:0 auto;
 	text-align:center;
+	list-style-type: none;
+	padding:0;
 }
 .indItem { 
 	text-align:left;
 	font-size:15px;
-	font-family:georgia;
+	font-family:cursive;
 }
 
 .remove, .edit {
 	width:20px;
 	height:20px;
+	display:none;
+	float:right;
 	background-repeat:no-repeat; background-size:20px 20px;
 }
 .remove {
 	background-image:url("images/remove.png");
-	padding-right:4px;
+	padding-left:10px;
 }
 .edit {
 	background-image:url("images/edit.png");
+	padding-right:10px;
 }
 
 /*classes for jquery*/
 .crossedOff {
 	text-decoration: line-through;
+}
+.indItem:hover{
+	color:red;
+	cursor:pointer;
+}
+input:focus{
+	outline-width:0;
+}
+.inputSection:focus {
+	border:2px solid black;
 }

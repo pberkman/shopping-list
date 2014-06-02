@@ -3,7 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Shopping List</title>
-	<link type="text" rel="stylesheet" href="list.css">
+	<link type="text" rel="stylesheet" href="list.css"/>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/app.js"></script>
 </head>
 <body>
 <div id="background">
@@ -12,26 +14,18 @@
 	<p>Pick a Date:<input type="text" id="datePicker"></p>
 	<section class="main">
 		<section class="inputSection">
-			<input type="text" value ="Type new item here" class="newItem"/>
+			<input type="text" value ="Type new item here" id="newItem"/>
 			<button id="addButton">Add Item</button>
 		</section>
 		<section class="listSection">
-			<table>
-				<tr class="item">
-					<td class="indItem crossedOff">Oranges</td>
-					<td class="remove"></td>
-					<td class="edit"></td>
-				</tr>
-				<tr class="item">
-					<td class="indItem">Apples</td>
-					<td class="remove"></td>
-					<td class="edit"></td>
-				</tr>
-				<tr class="item">
-					<td class="indItem">Coffee</td>
-					<td class="remove"></td>
-					<td class="edit"></td>
-			</table>
+			<ul>
+				<li <span class="indItem">Oranges</span><span class="remove"></span><span class="edit"></span>
+				</li>
+				<li <span class="indItem">Apples</span><span class="remove"></span><span class="edit"></span>
+				</li>
+				<li <span class="indItem">Coffee</span><span class="remove"></span><span class="edit"></span>
+				</li>
+			</ul>
 		</section>
 	</section>
 	<p>Click on the item to check it off</p>

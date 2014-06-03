@@ -2,10 +2,6 @@ html {
 	position:relative;
 	height:100%;
 }
-
-*{
-	
-}
 body{
 	margin:30px auto;
 	position:fixed;
@@ -77,12 +73,13 @@ header {
 }
 /*area for added list items */
 .listSection {
-	overflow:auto;
+	margin:0 auto;
 }
 ul { 
+	overflow:auto;
+	height:300px;
 	width:400px;
 	margin:0 auto;
-	text-align:center;
 	list-style-type: none;
 	padding:0;
 }
@@ -121,4 +118,8 @@ input:focus{
 }
 .inputSection:focus {
 	border:2px solid black;
+}
+button:hover {
+	background-color:rgba(0,102,204, 0.5);
+	color:white;
 }

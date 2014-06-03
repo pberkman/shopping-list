@@ -30,13 +30,14 @@ body{
 	background: -webkit-linear-gradient(to bottom, white, rgba(192,192,192,0.8));
 	background: -o-linear-gradient(to bottom, white, rgba(192,192,192,0.8));
 	background: -ms-linear-gradient(to bottom, white, rgba(192,192,192,0.8));
-	
+	box-shadow:5px 5px 10px;
 
 }
 header {
 	font-size:40px;
 	color:rgba(0,0,102,0.9);
 	font-family: Impact,sans-serif;
+	padding-top:20px;
 }
 
 /*area for list items*/
@@ -74,6 +75,7 @@ header {
 /*area for added list items */
 .listSection {
 	margin:0 auto;
+	padding-top:20px;
 }
 ul { 
 	overflow:auto;
@@ -85,7 +87,7 @@ ul {
 }
 .indItem { 
 	text-align:left;
-	font-size:15px;
+	font-size:20px;
 	font-family:cursive;
 }
 

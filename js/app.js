@@ -1,8 +1,9 @@
 $(document).ready(function() {
 	/*adding items	*/
+	
 	$("#addButton").on("click", function(){
 		var added = $("#newItem").val();
-		$("ul").append('<li <span class="indItem">' + added + '</span><span class="remove" style="display:block;"></span><span class="edit" style="display:none;"></span></li>');			
+		$("ul").append('<li <span class="indItem">' + added + '</span><span class="remove"></span><span class="edit"></span></li>');			
 		$("#newItem").val("");
 		})
 
@@ -11,7 +12,7 @@ $(document).ready(function() {
 		if (event.which == 13 ){
     	  event.preventDefault();
     	  var added = $("#newItem").val();
-		  $("ul").append('<li <span class="indItem">' + added + '</span><span class="remove" style="display:none;"></span><span class="edit" style="display:none;"></span></li>');
+		  $('<li <span class="indItem">' + added + '</span><span class="remove"></span><span class="edit"></span></li>').appendTo("ul"); 
 		  $("#newItem").val("");
 		}
 	})
@@ -21,16 +22,16 @@ $(document).ready(function() {
 	})
 	
 	/*making the edit and remove buttons appear */
-	$("li").mouseenter(function() {
+	$("ul").on("mouseenter", "li",function() {
 	  $(this).find(".remove").show();
 	  $(this).find(".edit").show();
 	})
-	$(".indItem").mouseleave(function() {
+	$("ul").on("mouseleave", "li",function() {
 		$(this).find(".remove").hide();
 		$(this).find(".edit").hide();
 	})
 	/*select the remove button to take item off list*/
-	$(".remove").on("click", function(){
+	$("ul").on("click", ".remove", function(){
 		var remove=$(this).closest(".indItem");
 		$(remove).remove();
 	})
@@ -39,7 +40,7 @@ $(document).ready(function() {
 		var edit=$(this).closest("indItem").focus();
 	})
 	/*click on item to check off*/
-	$(".indItem").on("click", function(){
-		$(this).toggleClass("crossedOff");
+	$("ul").on("click", ".indItem",function(){
+		$(this).closest(".indItem").toggleClass("crossedOff");
 	})
 });

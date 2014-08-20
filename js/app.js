@@ -44,7 +44,7 @@ $(document).ready(function() {
 	});
 	*/
 
-	$("li").on("click", function() {
+	$("ul").on("click","li", function() {
 		$("ul").sortable();
 	});
 	

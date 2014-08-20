@@ -11,6 +11,7 @@ $(document).ready(function() {
 	$("#newItem").keypress(function(event){
 		if (event.which == 13 ){
     	  event.preventDefault();
+    	  event.defaultPrevented();
     	  var added = $("#newItem").val();
 		  $('<li <span class="indItem">' + added + '</span><span class="remove"></span><span class="edit"></span></li>').appendTo("ul"); 
 		  $("#newItem").val("");

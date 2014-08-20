@@ -43,6 +43,10 @@ $(document).ready(function() {
 		var edit=$(this).closest("li").;
 	});
 	*/
+
+	$("li").on("click", function() {
+		$("ul").sortable();
+	});
 	
 	/*click on item to check off*/
 	$("ul").on("click", ".indItem",function(){

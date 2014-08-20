@@ -16,6 +16,7 @@ $(document).ready(function() {
 			$("#newItem").val("");
 		}
 	});
+
 	/*clearing input value on focus*/
 	$("#newItem").on("click",function(){
 		$(this).removeAttr("placeholder");
@@ -42,6 +43,7 @@ $(document).ready(function() {
 		var edit=$(this).closest("li").;
 	});
 	*/
+	
 	/*click on item to check off*/
 	$("ul").on("click", ".indItem",function(){
 		$(this).closest(".indItem").toggleClass("crossedOff");

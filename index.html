@@ -1,39 +1,38 @@
 <!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Shopping List</title>
-	<link type="text/css" rel="stylesheet" href="list.css"/>
-	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" />
-	<<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
-	<script src="js/app.js"></script>
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<title>Shopping List</title>
+		<link type="text/css" rel="stylesheet" href="list.css"/>
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+		<script src="js/app.js"></script>
+	</head>
 
-<body>
-	<div id="background">
-		<div id="container">
-			<header>Shopping List</header>
-			<section class="main">
-				<section class="inputSection">
-					<input type="text" name="userItem" placeholder="Enter new item here" id="newItem"/>
-					<button id="addButton">Add Item</button>
+	<body>
+		<div id="background">
+			<div id="container">
+				<header>Shopping List</header>
+				<section class="main">
+					<section class="inputSection">
+						<input type="text" name="userItem" placeholder="Enter new item here" id="newItem"/>
+						<button id="addButton">Add Item</button>
+					</section>
+					<section class="listSection">
+						<ul>
+							<li><span class="indItem">Oranges</span><span class="remove"></span><span class="edit"></span>
+							</li>
+							<li><span class="indItem">Apples</span><span class="remove"></span><span class="edit"></span>
+							</li>
+							<li><span class="indItem">Coffee</span><span class="remove"></span><span class="edit"></span>
+							</li>
+						</ul>
+					</section>
 				</section>
-				<section class="listSection">
-					<ul>
-						<li <span class="indItem">Oranges</span><span class="remove"></span><span class="edit"></span>
-						</li>
-						<li <span class="indItem">Apples</span><span class="remove"></span><span class="edit"></span>
-						</li>
-						<li <span class="indItem">Coffee</span><span class="remove"></span><span class="edit"></span>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<p>Click on the item to check it off</p>
-			<P>Click on item and drag to re-order the list</p>
-  		</div>
-  	</div>
-</body>
+				<p>Click on the item to check it off</p>
+				<P>Click on item and drag to re-order the list</p>
+	  		</div>
+	  	</div>
+	</body>
 </html>

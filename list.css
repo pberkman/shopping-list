@@ -76,7 +76,7 @@ header {
 }
 /*area for added list items */
 .listSection {
-	margin:0 auto;
+	text-align: left;
 	padding-top:20px;
 }
 ul { 
@@ -106,11 +106,11 @@ ul {
 	background-image:url("images/remove.png");
 	padding-left:10px;
 }
-.edit {
+/*.edit {
 	background-image:url("images/edit.png");
 	padding-right:10px;
 }
-
+*/
 /*classes for jquery*/
 .crossedOff {
 	text-decoration: line-through;

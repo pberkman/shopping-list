@@ -10,7 +10,7 @@ body{
 	width:100%;
 	height:100%;
 	font-family:georgia, sans-serif;
-	background-color:rgba(236,203,35,0.6);
+	background-color:#777777;
 }
 #background {
 	position:relative;
@@ -18,6 +18,8 @@ body{
 	background-repeat:no-repeat;
 	background-size:1517px;
 	background-position:center;
+	border-top:4px solid red;
+	border-bottom:4px solid red;
 }
 #container {
 	position:relative;
@@ -85,7 +87,9 @@ ul {
 	list-style-type: none;
 	padding:0;
 }
-.indItem { 
+
+
+.indItem { /* Individial Items */
 	text-align:left;
 	font-size:20px;
 	font-family:cursive;

@@ -39,7 +39,7 @@ $(document).ready(function() {
 
 	$("li").on("click", function() {
 		$("ul").sortable();
-	})
+	});
 	/*select the edit button to edit the item 
 	$(".edit").on("click", function(){
 		var edit=$(this).closest("li").;

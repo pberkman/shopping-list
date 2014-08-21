@@ -45,10 +45,6 @@ $(document).ready(function() {
 	});
 	*/
 
-	$("ul").on("click","li", function() {
-		$("ul").sortable();
-	});
-
 	/*click on item to check off*/
 	$("ul").on("click", ".indItem",function(){
 		$(this).closest(".indItem").toggleClass("crossedOff");

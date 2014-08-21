@@ -37,9 +37,10 @@ $(document).ready(function() {
 		$(remove).remove();
 	});
 
-	$("li").on("click", function() {
+	$("ul").on("click","li", function() {
 		$("ul").sortable();
 	});
+
 	/*select the edit button to edit the item 
 	$(".edit").on("click", function(){
 		var edit=$(this).closest("li").;
